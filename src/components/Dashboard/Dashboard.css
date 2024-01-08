@@ -1,0 +1,262 @@
+.section {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.table-items {
+  width: 50%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  border: 1px solid rgb(220, 218, 218);
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.data {
+  border-spacing: 0;
+  color: #3a3939c5;
+  border-color: rgb(220, 218, 218);
+}
+
+table,
+th,
+td {
+  position: relative;
+  padding: 5px;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+th i {
+  color: rgb(220, 218, 218);
+  font-size: 10px;
+}
+
+td {
+  color: #6e6d6d;
+}
+
+th select {
+  position: absolute;
+  right: 35px;
+  width: 80px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 218, 218);
+  color: rgb(70, 69, 69);
+}
+
+th span {
+  position: absolute;
+  right: 10px;
+  text-align: right;
+  margin: 0;
+  color: rgb(197, 193, 193);
+}
+
+table.data {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.chart {
+  height: 280px;
+  width: 50%;
+  margin-left: 15px;
+  margin-top: 18px;
+  padding-bottom: 5px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  border: 1px solid rgb(220, 218, 218);
+}
+
+.chart table td {
+  padding: 125px;
+  position: relative;
+}
+.doughnut {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+    border: 32px solid rgb(3, 3, 15);
+    border-top: 32px solid rgb(55, 55, 242);
+    border-left: 32px solid orange;
+    
+
+}
+
+.hole {
+  position: absolute;
+  top: 32%;
+  left: 32%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+
+.labels{
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  position: absolute;
+  top: 40px;
+  left: 390px;
+  width: 80px;
+  margin: 10px;
+
+}
+
+.labels p{
+  font-weight: 500;
+}
+
+.labels .rect-1{
+  position: absolute;
+  right: 90px;
+  top: 25px;
+  height: 10px;
+  width: 40px;
+  border-radius: 5px;
+  margin-right: 5px;
+  background-color: orange;
+}
+
+.labels .rect-2{
+  position: absolute;
+  right: 90px;
+  top: 80px;
+  height: 10px;
+  width: 40px;
+  border-radius: 5px;
+  margin-right: 5px;
+  background-color: rgb(55, 55, 242);
+}
+
+.labels .rect-3{
+  position: absolute;
+  right: 90px;
+  top: 130px;
+  height: 10px;
+  width: 40px;
+  border-radius: 5px;
+  margin-right: 5px;
+  background-color: rgb(3, 3, 15);
+}
+
+.right-corner{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 220px;
+  left: 580px;
+  height: 30px;
+  width: 60px;
+  background-color: rgb(240, 238, 238);
+  border-radius: 10px;
+}
+
+.right-corner i{
+  font-size: 25px;
+  color: black;
+}
+
+.right-corner .ring{
+  color: rgb(44, 102, 230);
+}
+
+@media (max-width: 1035px) {
+  .section {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+  }
+
+  .table-items {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border: 1px solid rgb(220, 218, 218);
+    margin-right: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+  }
+
+  .table-items {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border: 1px solid rgb(220, 218, 218);
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .data {
+    border-spacing: 0;
+    color: #3a3939c5;
+    border-color: rgb(220, 218, 218);
+  }
+
+  table,
+  td {
+    position: relative;
+    padding: 3px;
+    font-size: 13px;
+  }
+
+  table th {
+    margin: 15px;
+  }
+
+  th,
+  td {
+    text-align: left;
+  }
+
+  th i {
+    position: absolute;
+    top: 80px;
+    color: rgb(220, 218, 218);
+  }
+
+  td {
+    color: #6e6d6d;
+  }
+
+  th span {
+    position: absolute;
+    right: 5px;
+    text-align: right;
+    margin: 0;
+    color: rgb(197, 193, 193);
+  }
+
+  table.data {
+    table-layout: fixed;
+    width: 100%;
+  }
+}
